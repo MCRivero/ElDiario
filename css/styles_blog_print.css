@@ -1,0 +1,10 @@
+body { margin: 1.5cm 2.5cm; }
+
+h1, h3 { text-align: center; }
+
+.searchbox, #secciones, #mainfeature-blog, #sidebar, #footer{
+	display: none;
+}
+#content-blog .inner img, #content-blog .inner  h4, #content-blog .inner  h5{
+display: none;
+}

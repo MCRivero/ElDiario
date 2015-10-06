@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>El Diario</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+	
+	<script>
+		function switch_display() {
+			myEl = document.getElementById("edition_nav_list");
+			myEl.style.display = (myEl.style.display == 'block') ? 'none' : 'block';
+			
+			elx = document.getElementsByClassName("edition");
+			elx[0].style.backgroundColor = (elx[0].style.backgroundColor == 'rgb(80, 79, 80)') ? 'rgb(255, 255, 255)' : 'rgb(80, 79, 80)';
+		}
+	
+		function switch_display1 (id) {
+			var ELY = document.getElementById(id);
+			ELY.style.display = (ELY.style.display == 'block') ? 'none' : 'block';
+			ELY.style.backgroundColor = (ELY.style.backgroundColor == 'rgb(00, 99, 00)') ? 'rgb(00, 00, 00)' : 'rgb(00, 99, 00)';
+		}
+	</script>
+	
+  </head>
+  <body>
+    <div id="wrapper">
+	
+		<div id="header">
+			<h3 id="fecha"><script src="js/fecha.js"></script></h3>
+			<h1>El Diario</h1>
+		</div> <!-- header -->
+		
+		<!--
+		<div class="edition" onclick="switch_display()">Edition: <strong>US</strong><span class="arrow-down">&#x25BE;</span>
+			<ul id="edition_nav_list">
+				<li><a href="http://www.huffingtonpost.com/?country=CA"> Canada <span class="derecha">CA</span></a>
+				</li>
+				<li><a href="http://www.huffingtonpost.com/?country=FR"> France <span class="derecha">FR</span></a>	
+				</li>
+				<li><a href="http://www.huffingtonpost.com/?country=IT"> Italia <span class="derecha">IT</span></a>	
+				</li>
+				<li><a href="http://www.huffingtonpost.com/?country=ES"> Espa&ntilde;a <span class="derecha">ES</span></a> 
+				</li>
+				<li><a href="http://www.huffingtonpost.com/?country=US"> United States <span class="derecha">US</span></a>
+				</li>
+				<li><a href="http://www.huffingtonpost.com/?country=UK"> United Kingdom <span class="derecha">UK</span></a>
+				</li>
+			</ul>
+		</div>
+		-->
+		
+		<div class="searchbox">
+			<form action="app/buscar.php" method="post">
+				<input type="text" id="buscar" name="buscar" placeholder="Busca en El Diario">
+				<input type="image" id="boton" src="logos/Logo_Search.png" alt="Submit">
+			</form>					
+		</div>
+		
+		<div id="secciones">
+			<ul>
+				<li><a href=""><h2>P&aacute;gina Principal</h2></a></li>
+				<li onmouseover="switch_display1('politica');" onmouseout="switch_display1('politica');">
+					<a href=""><h2>Pol&iacute;tica</h2></a>
+					<div id="politica">
+						<ul>
+							<li><a href="http://www.huffingtonpost.com/2013/05/10/benghazi-talking-points_n_3253638.html?ir=Politics">
+							Benghazi Talking Points Revisions Pushed By State Department</a></li>
+							<li><a href="http://www.huffingtonpost.com/2013/05/10/newtown-tear-down-sandy-hook_n_3256761.html?ir=Politics">
+							Newtown Panel: Tear Down Sandy Hook Elementary School, Rebuild</a></li>
+							<li><a href="http://www.huffingtonpost.com/2013/05/09/air-force-one-for-sale_n_3247551.html?ir=Politics">
+							Air Force One For Sale: Government Selling Former Presidential Plane</a></li>
+						</ul>
+					</div>
+
+				</li>
+				<li><a href=""><h2>Econom&iacute;a</h2></a></li>
+				<li><a href=""><h2>Ciencia&amp;Tecnolog&iacute;a</h2></a></li>
+				<li><a href=""><h2>Mundo</h2></a></li>
+			</ul>
+		</div>
+
+      <div id="main">
+		<div id="mainfeature">
+			<h1>MORE AMERICAN THAN APPLE PIE</h1>
+			<img src="img/r-APPLE-PIE-huge.jpg" alt="Apple Pie" />
+		</div> <!-- mainfeature -->
+		
+		<div id="main2">
+			<div id="sidebar">
+				<h2>MAS POPULARES</h2>	
+				<div class="inner">
+					<img src="img/s-NICKI-MINAJ-IDOL-OUTFIT-154x114.jpg" alt="NICKI-MINAJ"/>
+					<h3><a href="">Nicki Minaj's Idol Outfit Was Talk Of Twitter During Episode (PHOTO, VIDEO)</a></h3>
+				</div>
+		  
+				<div class="inner">
+					<img src="img/s-WATERTOWN-POLICE-CHACE-154x114.jpg" alt="WATERTOWN-POLICE"/>
+					<h3><a href="">Watertown Police Chase: Gunfire, Explosions Reported On Scanner (LIVE UPDATES)</a></h3>
+				</div>
+			
+				<div class="inner">
+					<img src="img/s-SUSPECTS-mini.jpg" alt="SUSPECTS"/>
+					<h3><a href="">Boston Marathon Bombing Suspect Photos Released; FBI Searching For 'Suspect 1' And 'Suspect 2'</a></h3>
+				</div>
+				
+				<div class="inner">
+					<img src="img/s-NEW-YORK-POST-154x114.jpg" alt="NEW-YORK-POST"/>
+					<h3><a href="">New York Post's Boston 'Bag Men' Front Page Called 'A New Low,' 'Appalling' (PHOTO)</a></h3>
+				</div>
+				
+				<div class="inner">
+					<img src="img/s-CHEWBACCAHARRISONFORD-154x114.jpg" alt="CHEWBACCAHARRISONFORD"/>
+					<h3><a href="">Chewbacca Crashes Harrison Ford's Kimmel Interview (VIDEO)</a></h3>
+				</div>
+				
+				<div class="inner">
+					<img src="img/s-ADOLPHUS-BUSCH-IV-NRA-154x114.jpg" alt="ADOLPHUS-BUSCH"/>
+					<h3><a href="">Adolphus Busch IV Resigns From NRA After Gun Control Defeat In Senate</a></h3>
+				</div>
+				
+				<div class="inner">
+					<img src="img/s-BOSTON-SUSPECT-WANTED-154x114.jpg" alt="BOSTON-SUSPECT"/>
+					<h3><a href="">Boston Marathon Bombing Suspect Killed, Another On The Loose (LIVE UPDATES)</a></h3>
+				</div>
+				
+				<div class="inner">
+					<img src="img/s-MIT-COLLEGE-SHOOTING-154x114.jpg" alt="MIT-COLLEGE-SHOOTING"/>
+					<h3><a href="">MIT College Shooting: Police Officer Shot And Killed In Incident On Campus</a></h3>
+				</div>
+				
+				<div class="social-media">
+					<a href=""><img src="logos/facebook.png"/></a>
+					<a href=""><img src="logos/twitter.png"/></a>
+					<a href=""><img src="logos/rss.png"/></a>				
+				</div>
+				
+			</div> <!-- sidebar -->
+			
+			<div id="sidebar2">
+				<h2>NUESTROS BLOGUEROS</h2>	
+				
+				<div class="inner">
+					<img src="img/headshot.jpg" alt="Peggy Drexler"/>
+					<h3><a href="app/blogs.html">Man 2020</a></h3>	
+					<h4><a href="app/blogs.html">Dr. Peggy Drexler</a></h4>	
+					<h5>Author, research psychologist and gender scholar</h5>	
+					<p>A time of female transformation has been a time of male accommodation. The adjustment to a massive transfer of power remains a work in progress and, judging by surveys and headlines, the progress is painfully uneven.</p>
+					<a class="comment" href="">Comments ( )</a>
+				</div>
+		  
+				<div class="inner">
+					<img src="img/Ariadnna.jpg" alt="Arianna Huffington"/>
+					<h3><a href="">The Jobs Crisis: It May Not Be "Breaking News," But It's Definitely "Broken News"</a></h3>
+					<h4><a href="">Arianna Huffington</a></h4>	
+					<p>BREAKING! This just in: the economy is terrible and the country is suffering its worst jobs crisis since the Depression... developing... Of course, this isn't actually breaking news, it's aching news -- and before the tragic bombings in Boston, the most important story going on. But you wouldn't have known that if you'd been listening to the media, where the long-term jobs disaster that's been enveloping the country for five years goes virtually unmentioned. Only 88,000 new jobs were produced last month. And for the long-term unemployed, the situation is verging on hopeless. It's hard to imagine our jobs disaster will get the attention -- and the solutions -- it deserves if our media doesn't think it's a story worth telling. Perhaps we need to come up with an alternate term to the breathless "BREAKING" tag. How about "BROKEN"?</p>
+					<a class="comment" href="">Comments ( )</a>
+				</div>
+			
+				<div class="inner">
+					<img src="img/Jamie Lee.jpg" alt="Jamie Lee"/>
+					<h3><a href="">Death and Taxes</a></h3>
+					<h4><a href="">Jamie Lee Curtis</a></h4>
+					<h5>Actress and children's book author</h5>					
+					<p>April 15 now so sadly known for both. One a privilege for living in a free county, the other perhaps a price.</p>
+					<a class="comment" href="">Comments ( )</a>
+				</div>
+				
+				<div class="inner">
+					<img src="img/Hannah.jpg" alt="Hannah Kathryn DeYoung"/>
+					<h3><a href="">What I Saw At the Finish Line</a></h3>
+					<h4><a href="">Hannah Kathryn DeYoung</a></h4>
+					<h5>Sophomore, Northeastern University</h5>					
+					<p>At first I just felt the impact go through my body. Runners ducked and asked "What was that?" as they swiveled towards the finish line. A pillar of smoke stretched into the air, but with hundreds of runners between me and the explosion I could not see who it had impacted.</p>
+					<a class="comment" href="">Comments ( )</a>
+				</div>
+				
+				<div class="inner">
+					<img src="img/Michael.jpg" alt="Michael Shaw"/>
+					<h3><a href="">Reading the Pictures: What Shocks Me Most About the Bloody Boston Marathon Bombing Pictures (GRAPHIC)</a></h3>
+					<h4><a href="">Michael Shaw</a></h4>
+					<h5>Publisher of BagNewsNotes, topping LIFE.com's 2011 Best Photo Blogs</h5>					
+					<p>What takes me aback are how graphic the news photos are as compared to the almost total visual censorship of American war casualties over the past twelve years.</p>
+					<a class="comment" href="">Comments ( )</a>
+				</div>
+				
+				<div class="inner">
+					<img src="img/Frank.jpg" alt="Frank Mannion"/>
+					<h3><a href="">Thatcher at the Movies</a></h3>
+					<h4><a href="">Frank Mannion</a></h4>
+					<h5>Award-winning Irish movie producer and distributor</h5>					
+					<p>Looking back now, it could be argued that the Thatcher period was the golden age of British film.</p>
+					<a class="comment" href="">Comments ( )</a>
+				</div>
+				
+			</div> <!-- sidebar2 -->
+			
+        <div id="content">
+          	<div class="inner">
+				<h2><a href="">Background Checks Deal On Brink Of Collapse</a></h2>
+				<img src="img/s-JOE-MANCHIN-NRA-large300.jpg" alt="JOE-MANCHIN-NRA" />
+				<h2><a href="">WHIP COUNT: Undecided Senators Siding With NRA</a></h2>
+				<a class="comment" href="">Comments ( )</a>
+			</div>
+			
+			<div class="inner">
+				<h2><a href="">'Substantial Progress' In Boston Probe</a></h2>
+				<img src="img/s-BOSTON-POLICE-MOBILE-large300.jpg" alt="BOSTON-POLICE-MOBILE" />
+				<h2><a href="">Report: Explosives Made Of Pressure Cookers With Metal, Ball Bearings... CNN Source: Pressure Cooker Lid Found... Bomb Photos Obtained</a></h2>
+				<a class="comment" href="">Comments ( )</a>
+			</div>
+			
+			<div class="inner">
+				<h2><a href="">Scalia: Voting Rights Act Is A Form Of 'Racial Preferment'</a></h2>
+				<img src="img/s-ANTONIN-SCALIA-large300.jpg" alt="ANTONIN-SCALIA" />
+				<h2><a href="">Right Wing vs. O.. State Going Blue?.. Bachmann On Top.. Tea Party Stun.. NRA Lie?.. Boehner Break</a></h2>
+				<a class="comment" href="">Comments ( )</a>
+			</div>
+			
+			<div class="inner">
+				<h2><a href="app/blogs_media.html"><span style="color:red">VIDÉO. </span>Emmanuel Macron s'enflamme à l'Assemblée contre l'union "de ceux qui ne veulent pas changer le pays"</a></h3>
+				<img src="img/n-MACRON-large570.jpg" alt="n-MACRON-large570" />
+				<a class="comment" href="">Comments ( )</a>
+			</div>
+			
+			
+			<div class="inner">
+				<h2><a href="">PATHETIC: Foreclosure Program's Latest Setback</a></h2>
+				<img src="img/s-FORECLOSURE-SETTLEMENT-large300.jpg" alt="FORECLOSURE-SETTLEMENT" />
+				<h2><a href="">IKEA Meatball Shock.. Congress Sneaks.. ATM Fees Higher.. McDonald's New Deal.. Lotto Surprise</a></h2>
+				<a class="comment" href="">Comments ( )</a>
+			</div>
+			
+			<div class="inner">
+				<h2><a href="">PHOTO: Time's Heartbreaking Boston Cover</a></h2>
+				<img src="img/s-TIME-BOSTON-BOMBING-large300.jpg" alt="TIME-BOSTON" />
+				<h2><a href="">Maddow Pays Tribute.. Racial Profiling.. Awful Hannity.. Voice Of Boston.. Amy Goodman Speaks Out</a></h2>
+				<a class="comment" href="">Comments ( )</a>
+			</div>
+			
+			<div class="inner">
+				<h2><a href="">Investigation Reveals Gun Control Loophole</a></h2>
+				<img src="img/s-INTERNET-GUN-SALES-large300.jpg" alt="INTERNET-GUN" />
+				<a class="comment" href="">Comments ( )</a>
+			</div>
+			
+			<div class="inner">
+				<h2><a href="">House Immigration Group Says Talks Are Moving Forward</a></h2>
+				<img src="img/s-HOUSE-IMMIGRATION-GROUP-large300.jpg" alt="HOUSE-IMMIGRATION" />
+				<a class="comment" href="">Comments ( )</a>
+			</div>
+			
+		</div> <!-- content -->
+		</div> <!-- main2 -->
+		</div> <!-- main -->
+		<div id="footer">
+			<p>Copyright 2013 - Todos los derechos reservados</p>
+		</div> <!-- footer -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

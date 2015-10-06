@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>El Diario</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <!--<link rel="stylesheet" type="text/css" href="styles.css" />-->
+	<link rel="stylesheet" type="text/css" href="../css/styles_blog_print.css" media="print"/>
+	<link rel="stylesheet" type="text/css" href="../css/styles_blog_print.css" media="screen"/>
+	
+	<script>
+		function switch_display() {
+			myEl = document.getElementById("edition_nav_list");
+			myEl.style.display = (myEl.style.display == 'block') ? 'none' : 'block';
+			
+			elx = document.getElementsByClassName("edition");
+			elx[0].style.backgroundColor = (elx[0].style.backgroundColor == 'rgb(80, 79, 80)') ? 'rgb(255, 255, 255)' : 'rgb(80, 79, 80)';
+		}
+	
+		function switch_display1 (id) {
+			var ELY = document.getElementById(id);
+			ELY.style.display = (ELY.style.display == 'block') ? 'none' : 'block';
+			ELY.style.backgroundColor = (ELY.style.backgroundColor == 'rgb(00, 99, 00)') ? 'rgb(00, 00, 00)' : 'rgb(00, 99, 00)';
+		}
+	</script>
+	
+  </head>
+  <body>
+    <div id="wrapper">
+	
+		<div id="header">
+			<h3 id="fecha"><script src="../js/fecha.js"></script></h3>
+			<h1>El Diario</h1>
+		</div> <!-- header -->
+		
+		<div class="searchbox">
+			<form>
+				<input type="text" value="Busca en La Verdad">
+				<a href=""><img src="../logos/Logo_Search.png"/></a>
+			</form>					
+		</div>
+		
+		<div id="secciones">
+			<ul>
+				<li><a href=""><h2>P&aacute;gina Principal</h2></a></li>
+				<li onmouseover="switch_display1('politica');" onmouseout="switch_display1('politica');">
+					<a href=""><h2>Pol&iacute;tica</h2></a>
+					<div id="politica">
+						<ul>
+							<li><a href="http://www.huffingtonpost.com/2013/05/10/benghazi-talking-points_n_3253638.html?ir=Politics">
+							Benghazi Talking Points Revisions Pushed By State Department</a></li>
+							<li><a href="http://www.huffingtonpost.com/2013/05/10/newtown-tear-down-sandy-hook_n_3256761.html?ir=Politics">
+							Newtown Panel: Tear Down Sandy Hook Elementary School, Rebuild</a></li>
+							<li><a href="http://www.huffingtonpost.com/2013/05/09/air-force-one-for-sale_n_3247551.html?ir=Politics">
+							Air Force One For Sale: Government Selling Former Presidential Plane</a></li>
+						</ul>
+					</div>
+
+				</li>
+				<li><a href=""><h2>Econom&iacute;a</h2></a></li>
+				<li><a href=""><h2>Ciencia&amp;Tecnolog&iacute;a</h2></a></li>
+				<li><a href=""><h2>Mundo</h2></a></li>
+			</ul>
+		</div>
+
+      <div id="main">
+	  
+		<div id="mainfeature-blog">
+			<ul>
+				<li><h1>THE BLOG</h1></li>
+				<li><h4>Featuring fresh takes and real-time analysis from HuffPost's signature lineup of contributors</h4></li>
+				<li>
+					<a class="author" href="">Robert Kuttner</a>
+					<a class="author" href="">Tracy Morgan</a>
+				</li>
+			</ul>	
+		</div> <!-- mainfeature-blog -->
+		
+		<div id="main2-blog">
+			<div id="sidebar">
+				<h2>MAS POPULARES</h2>	
+				<div class="inner">
+					<img src="../imagenes/s-NICKI-MINAJ-IDOL-OUTFIT-154x114.jpg" alt="NICKI-MINAJ"/>
+					<h3><a href="">Nicki Minaj's Idol Outfit Was Talk Of Twitter During Episode (PHOTO, VIDEO)</a></h3>
+				</div>
+		  
+				<div class="inner">
+					<img src="../imagenes/s-WATERTOWN-POLICE-CHACE-154x114.jpg" alt="WATERTOWN-POLICE"/>
+					<h3><a href="">Watertown Police Chase: Gunfire, Explosions Reported On Scanner (LIVE UPDATES)</a></h3>
+				</div>
+			
+				<div class="inner">
+					<img src="../imagenes/s-SUSPECTS-mini.jpg" alt="SUSPECTS"/>
+					<h3><a href="">Boston Marathon Bombing Suspect Photos Released; FBI Searching For 'Suspect 1' And 'Suspect 2'</a></h3>
+				</div>
+				
+				<div class="inner">
+					<img src="../imagenes/s-NEW-YORK-POST-154x114.jpg" alt="NEW-YORK-POST"/>
+					<h3><a href="">New York Post's Boston 'Bag Men' Front Page Called 'A New Low,' 'Appalling' (PHOTO)</a></h3>
+				</div>
+				
+				<div class="inner">
+					<img src="../imagenes/s-CHEWBACCAHARRISONFORD-154x114.jpg" alt="CHEWBACCAHARRISONFORD"/>
+					<h3><a href="">Chewbacca Crashes Harrison Ford's Kimmel Interview (VIDEO)</a></h3>
+				</div>
+				
+				<div class="inner">
+					<img src="../imagenes/s-ADOLPHUS-BUSCH-IV-NRA-154x114.jpg" alt="ADOLPHUS-BUSCH"/>
+					<h3><a href="">Adolphus Busch IV Resigns From NRA After Gun Control Defeat In Senate</a></h3>
+				</div>
+				
+				<div class="inner">
+					<img src="../imagenes/s-BOSTON-SUSPECT-WANTED-154x114.jpg" alt="BOSTON-SUSPECT"/>
+					<h3><a href="">Boston Marathon Bombing Suspect Killed, Another On The Loose (LIVE UPDATES)</a></h3>
+				</div>
+				
+				<div class="inner">
+					<img src="../imagenes/s-MIT-COLLEGE-SHOOTING-154x114.jpg" alt="MIT-COLLEGE-SHOOTING"/>
+					<h3><a href="">MIT College Shooting: Police Officer Shot And Killed In Incident On Campus</a></h3>
+				</div>
+				
+				<div class="social-media">
+					<a href=""><img src="../logos/facebook.png"/></a>
+					<a href=""><img src="../logos/twitter.png"/></a>
+					<a href=""><img src="../logos/rss.png"/></a>				
+				</div>
+				
+			</div> <!-- sidebar -->
+			
+			<div id="content-blog">
+			
+				<div class="inner">
+					<img src="../img/headshot.jpg" alt="Peggy Drexler"/>
+					<h4>Dr. Peggy Drexler</h4>	
+					<h5>Author, research psychologist and gender scholar</h5>	
+					<h3>Man 2020</h3>
+					<a href="blogs_print.html"><img class ="printer" src="../logos/printer.png" /></a>
+				
+				
+				<p>Change for women over the last decade is in the books. Roles have transformed. 
+					Opportunities have exploded. And a future of choice and empowerment is locked in.
+					For men, that future is a lot less certain.</p>
+					
+				<p>A time of female transformation has been a time of male accommodation. The adjustment 
+					to a massive transfer of power remains a work in progress and, judging by surveys and headlines,
+					the progress is painfully uneven.
+					Where is the accommodation and adjustment taking the world of men? If the old model of 
+					masculinity has outlived its shelf life, what will the new one look like?</p>
+					
+					<p>The husband of a long-time friend is groping for an answer. Like a lot of others, he recently 
+					found himself out of a job he assumed he would have as long as he wanted it. He's bitter. But 
+					more than that, he's confused. "it's not just being out of a job," he said. "That happens. 
+					You move on, and you find another one." But -- in a burst of self examination unusual for a 
+					hard-nosed former rugby player -- he said: "I feel like I'm competing in a whole different 
+					place. Some of the very best parts of who I am don't seem to fit."</p>
+					
+					<p>Knowing him for the effective sometimes abrasive take-charge guy that he is, I thought to 
+					myself: "You might be on to something."
+					Until the last recent sliver of recorded history: Men were men, women were women, and biology 
+					was destiny.
+					Knowing him for the effective sometimes abrasive take-charge guy that he is, I thought to myself:
+					"You might be on to something."
+					Until the last recent sliver of recorded history: Men were men, women were women, and biology 
+					was destiny.</p>
+					
+					<p>But the strength that it took to build walls, forge steel and fight wars has lost its power to 
+					define possibility. The division between men's work and women's work is now simply a matter of 
+					choice. In all but a very few precincts of work and life, there is no intrinsic value in being 
+					male.
+					As men wander through this often painful period of reassessment of who and what they are in the 
+					world, the future holds some possible choices.</p>
+					
+					<p>One argument is that gender difference is so genetically ingrained that we will, over time, 
+					revert to a semblance of traditional roles. This period of adjustment will end, and men will be 
+					men -- perhaps with some excess of testosterone bled from the tank. (There is also hope in some 
+					quarters that lower feminist-liberal birth rates and higher traditional-conservative birth rates
+					will one day restore men to the throne.)</p>
+					
+					<p>Another, recently popular, take is that men are old news. Their role -- their very usefulness in
+					a developed society -- has been usurped to the point they will never again be men as we know 
+					them. They will be androgynous followers of a new and superior model of female leadership. As 
+					James Wolcott put it in a Vanity Fair article: American men are " in a prolonged batting slump."
+					Somewhere in between is the hope that we will grow into a society where gender expectation is 
+					fluid and multidimensional. A sense of place and roles will be as diverse as the humans who 
+					measure their worth against them. We might even revert to an earlier-times gender community, 
+					where it took both men and women working together to bring in the crops.</p>
+					
+					<p>If we want a peek at men by the end of the decade, we might start with those who will about then,
+					be hitting their prime -- the 80 million or so Millennials.
+					Some of the signs bode well. In the same way they are called the first generation of digital 
+					natives, they are also the first generation of gender natives. Gender equality was taught early 
+					and reinforced continuously in all aspects of their lives.
+					For them working with -- and for women -- is no more remarkable than getting an email.They are 
+					also much more likely to take a greater share of household responsibility. They support the 
+					ambitions of working wives and are -- generally -- comfortable with those wives earning as much 
+					or more than they do.
+					Research also indicates Millennial men are more family-oriented than earlier generations of 
+					fathers who prowled the perimeters of family life -- not to be bothered when he's reading the 
+					paper.</p>
+
+			</div>
+			</div> <!-- content -->
+		</div> <!-- main2-blog -->
+		</div> <!-- main -->
+		<div id="footer">
+			<p>Copyright 2013 - Todos los derechos reservados</p>
+		</div> <!-- footer -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

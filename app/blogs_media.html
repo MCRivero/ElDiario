@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>El Diario</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+	
+	<script>
+		function switch_display() {
+			myEl = document.getElementById("edition_nav_list");
+			myEl.style.display = (myEl.style.display == 'block') ? 'none' : 'block';
+			
+			elx = document.getElementsByClassName("edition");
+			elx[0].style.backgroundColor = (elx[0].style.backgroundColor == 'rgb(80, 79, 80)') ? 'rgb(255, 255, 255)' : 'rgb(80, 79, 80)';
+		}
+	
+		function switch_display1 (id) {
+			var ELY = document.getElementById(id);
+			ELY.style.display = (ELY.style.display == 'block') ? 'none' : 'block';
+			ELY.style.backgroundColor = (ELY.style.backgroundColor == 'rgb(00, 99, 00)') ? 'rgb(00, 00, 00)' : 'rgb(00, 99, 00)';
+		}
+	</script>
+	
+  </head>
+  <body>
+    <div id="wrapper">
+	
+		<div id="header">
+			<h3 id="fecha"><script src="../js/fecha.js"></script></h3>
+			<h1>El Diario</h1>
+		</div> <!-- header -->
+		
+		<!--
+		<div class="edition" onclick="switch_display()">Edition: <strong>US</strong><span class="arrow-down">&#x25BE;</span>
+			<ul id="edition_nav_list">
+				<li><a href="http://www.huffingtonpost.com/?country=CA"> Canada <span class="derecha">CA</span></a>
+				</li>
+				<li><a href="http://www.huffingtonpost.com/?country=FR"> France <span class="derecha">FR</span></a>	
+				</li>
+				<li><a href="http://www.huffingtonpost.com/?country=IT"> Italia <span class="derecha">IT</span></a>	
+				</li>
+				<li><a href="http://www.huffingtonpost.com/?country=ES"> Espa&ntilde;a <span class="derecha">ES</span></a> 
+				</li>
+				<li><a href="http://www.huffingtonpost.com/?country=US"> United States <span class="derecha">US</span></a>
+				</li>
+				<li><a href="http://www.huffingtonpost.com/?country=UK"> United Kingdom <span class="derecha">UK</span></a>
+				</li>
+			</ul>
+		</div>
+		-->
+		
+		<div class="searchbox">
+			<form action="buscar.php" method="post">
+				<input type="text" id="buscar" name="buscar" placeholder="Busca en El Diario">
+				<input type="image" id="boton" src="../logos/Logo_Search.png" alt="Submit">
+			</form>					
+		</div>
+		
+		<div id="secciones">
+			<ul>
+				<li><a href="../index.html"><h2>P&aacute;gina Principal</h2></a></li>
+				<li onmouseover="switch_display1('politica');" onmouseout="switch_display1('politica');">
+					<a href=""><h2>Pol&iacute;tica</h2></a>
+					<div id="politica">
+						<ul>
+							<li><a href="http://www.huffingtonpost.com/2013/05/10/benghazi-talking-points_n_3253638.html?ir=Politics">
+							Benghazi Talking Points Revisions Pushed By State Department</a></li>
+							<li><a href="http://www.huffingtonpost.com/2013/05/10/newtown-tear-down-sandy-hook_n_3256761.html?ir=Politics">
+							Newtown Panel: Tear Down Sandy Hook Elementary School, Rebuild</a></li>
+							<li><a href="http://www.huffingtonpost.com/2013/05/09/air-force-one-for-sale_n_3247551.html?ir=Politics">
+							Air Force One For Sale: Government Selling Former Presidential Plane</a></li>
+						</ul>
+					</div>
+
+				</li>
+				<li><a href=""><h2>Econom&iacute;a</h2></a></li>
+				<li><a href=""><h2>Ciencia&amp;Tecnolog&iacute;a</h2></a></li>
+				<li><a href=""><h2>Mundo</h2></a></li>
+			</ul>
+		</div>
+
+      <div id="main">
+	  
+		<div id="mainfeature-blog">
+			<ul>
+				<li><h1>THE BLOG</h1></li>
+				<li><h4>Featuring fresh takes and real-time analysis from HuffPost's signature lineup of contributors</h4></li>
+				<li class="blogueros">
+					<a class="autor" href="">Robert Kuttner</a>
+					<a class="autor" href="">Tracy Morgan</a>
+				</li>
+			</ul>	
+		</div> <!-- mainfeature-blog -->
+		
+		<div id="main2-blog">
+			<div id="sidebar">
+				<h2>MAS POPULARES</h2>	
+				<div class="inner">
+					<img src="../img/s-NICKI-MINAJ-IDOL-OUTFIT-154x114.jpg" alt="NICKI-MINAJ"/>
+					<h3><a href="">Nicki Minaj's Idol Outfit Was Talk Of Twitter During Episode (PHOTO, VIDEO)</a></h3>
+				</div>
+		  
+				<div class="inner">
+					<img src="../img/s-WATERTOWN-POLICE-CHACE-154x114.jpg" alt="WATERTOWN-POLICE"/>
+					<h3><a href="">Watertown Police Chase: Gunfire, Explosions Reported On Scanner (LIVE UPDATES)</a></h3>
+				</div>
+			
+				<div class="inner">
+					<img src="../img/s-SUSPECTS-mini.jpg" alt="SUSPECTS"/>
+					<h3><a href="">Boston Marathon Bombing Suspect Photos Released; FBI Searching For 'Suspect 1' And 'Suspect 2'</a></h3>
+				</div>
+				
+				<div class="inner">
+					<img src="../img/s-NEW-YORK-POST-154x114.jpg" alt="NEW-YORK-POST"/>
+					<h3><a href="">New York Post's Boston 'Bag Men' Front Page Called 'A New Low,' 'Appalling' (PHOTO)</a></h3>
+				</div>
+				
+				<div class="inner">
+					<img src="../img/s-CHEWBACCAHARRISONFORD-154x114.jpg" alt="CHEWBACCAHARRISONFORD"/>
+					<h3><a href="">Chewbacca Crashes Harrison Ford's Kimmel Interview (VIDEO)</a></h3>
+				</div>
+				
+				<div class="inner">
+					<img src="../img/s-ADOLPHUS-BUSCH-IV-NRA-154x114.jpg" alt="ADOLPHUS-BUSCH"/>
+					<h3><a href="">Adolphus Busch IV Resigns From NRA After Gun Control Defeat In Senate</a></h3>
+				</div>
+				
+				<div class="inner">
+					<img src="../img/s-BOSTON-SUSPECT-WANTED-154x114.jpg" alt="BOSTON-SUSPECT"/>
+					<h3><a href="">Boston Marathon Bombing Suspect Killed, Another On The Loose (LIVE UPDATES)</a></h3>
+				</div>
+				
+				<div class="inner">
+					<img src="../img/s-MIT-COLLEGE-SHOOTING-154x114.jpg" alt="MIT-COLLEGE-SHOOTING"/>
+					<h3><a href="">MIT College Shooting: Police Officer Shot And Killed In Incident On Campus</a></h3>
+				</div>
+				
+				<div class="social-media">
+					<a href=""><img src="../logos/facebook.png"/></a>
+					<a href=""><img src="../logos/twitter.png"/></a>
+					<a href=""><img src="../logos/rss.png"/></a>				
+				</div>
+				
+			</div> <!-- sidebar -->
+			
+			<div id="content-media">
+			
+				<h3>VIDÉO. Emmanuel Macron s'enflamme à l'Assemblée contre l'union "de ceux qui ne veulent pas changer le pays"</h3>
+				
+				<iframe class="video" frameborder="0" width="640" height="360"
+					src="https://api.dmcloud.net/player/embed/4e7343f894a6f677b10006b4/54e39562947399501623e0e9/4d895f854bff479fa0662208dc6c72f1?exported=1">
+				</iframe>
+				
+				<!--
+				<div class="video">				
+					<object classid="CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6"
+						width="600" height="400">
+						<param name="type" value="video/x-ms-wmv" />
+						<param name="URL" value="Star Trek - The original series - S02E09 - Metamorphosis (031) (1967).avi" />
+						<param name="uiMode" value="full" />
+						<param name="autoStart" value="false" />
+						<embed width="650" height="400" type="video/x-ms-wmv" src="Star Trek - The original series - S02E09 - Metamorphosis (031) (1967).avi" controls="All"
+							loop="false" autostart="false" pluginspage="http://www.microsoft.com/windows/windowsmedia/" 
+						/>
+					</object>
+				</div>
+				-->
+					
+			</div><!-- content-media -->
+			</div> <!-- main2-blog -->
+		</div> <!-- main -->
+		
+		<div id="footer">
+			<p>Copyright 2013 - Todos los derechos reservados</p>
+		</div> <!-- footer -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
